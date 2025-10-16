@@ -1,0 +1,86 @@
+<html>
+    <head>
+        <title>Hotel</title>
+    </head>
+    <style>
+        form{
+            background-color: white;
+            padding:30px;
+            border-radius: 8px;
+            box-shadow:0 4px 8px rgba(0,0,0,0.1);
+            width:100%;
+            max-width: 550px;
+        }
+        fieldset{
+            border:1px solid #ccc;border-radius: 5px;
+            padding: 15px; margin-bottom:5px;
+        }
+        button{
+            background-color: #28a745;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        label{
+            font-size: 1.1em;
+            font-weight: bold;
+            color: #007bff;
+            padding: 0 px;
+        }
+    </style>
+<body>
+    <h2 align="center">HOTEL BOOKING FORM</h2>
+    <form action="/hotel-room" method="post">
+   
+<fieldset>
+        <label for="checkin" style="display:flex;gap:20px;font-weight: bold;margin-bottom: 5px;margin-top:15px;">Check-in Date</label>
+    <input type="date" id="checkin" name="checkin" required>
+<br>
+    <label for="checkout" style="display:flex ;font-weight: bold;margin-bottom: 5px;margin-top:15px;">Check-out Date</label>
+    <input type="date" id="checkout" name="checkout" required>
+<br>
+<br>
+<section style="display: flex;gap: 20px;">
+    <label for="mem">Adults(>18)</label>
+    <label for="child">Children(0-12)</label>
+</section>
+<section style="margin-top:2px;gap: 40px;display:flex;">
+    <input type="number" id="mem" name="mem" min="1" max="10" value="1" required>
+    <input type="number" id="child" name="child" main="0" max="10" value="0" required>
+</section>
+<br>
+    <label for="room-type">Room Type</label>
+        <select id="room-type" name="room_type" required>
+            <option value="" disabled selected>Select a Room Type</option>
+            <option value="standard">Standard Double ($100/night)</option>
+            <option value="deluxe">Deluxe King ($150/night)</option>
+            <option value="suite">Executive Suite ($250/night)</option>
+        </select>
+</fieldset>
+<br>
+
+<fieldset>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="Enter Full Name" required>
+<br>
+<br>
+    <label for="number">Phone Number</label>
+    <input type="tel" id="number" name="number" placeholder="Enter Mobile Number" required>
+<br>
+</fieldset>
+<br>
+<fieldset>
+   <label for="misc" style="margin: 10px;padding-right:10px;">Preferences</label>
+   <textarea id="misc" name="misc" rows="3" placeholder="Non-smoking room, high floor, etc."></textarea>
+</fieldset>
+<br>
+<br>
+   <button type="submit">Complete Reservation</button>
+    </form>
+</body>
+</html>
