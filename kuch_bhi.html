@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <title>Try Me</title>
+    </head>
+    <style>
+        body{
+            margin: 0;
+        }
+        nav{
+            position: relative;width: 100%;font-family: Arial;
+        }
+        nav ul{
+            list-style-type: none;margin:0;padding:0;overflow:hidden;background-color:#c1aea5;border-radius: 0 0 10px 10px;
+        }
+        nav ul li{
+            float:left;
+        }
+        nav ul li a{
+            display: block;text-align: center;padding: 10px 16px;text-decoration: none;color:black;
+        }
+        nav ul li a:hover{
+            background-color: #696462 ;
+        }
+        #info{
+            font-family: Arial;padding-left: 10px;padding-right: 10px;
+        }
+        #name{
+            height: 44;display: inline-block;
+        }
+        #pfp{
+            border-radius: 50%;height:200;width:200;padding: 50 30 40 20;float:left;
+        }
+        #name::first-letter{
+            color: brown;font-size: 56;
+        }
+        #into{
+            margin-bottom: 0;
+        }
+        hr{
+            margin-top:20px;align-self: center;
+        }
+        .time ul{
+            padding: 0;margin: 0;list-style-type: none;position: relative;
+        }
+        .time ul::before{
+            content: '';position: absolute;top:0;left: 50%;width: 2px;height: 350px;background-color: black;transform: translateX(-50%);
+        }
+        .time ul li{
+            padding: 20px;position: relative; margin-bottom: 20px;text-align: left;
+        }
+        .time ul li::before{
+            content: '';position: absolute;width: 12px;height: 12px;background: dodgerblue;border: 3px solid white;border-radius: 50%;left: 50%; top: 25px; transform: translateX(-50%);z-index: 1;
+        }
+        .date{
+            font-weight: bold;
+            color: dodgerblue;
+            margin-bottom: 5px;
+        }
+        .content{
+            font-size: 16px;line-height: 1.5;color: #696462;margin-top: 5px;
+            background-color: #a19797;padding: 15px;border-radius: 6px;box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        #album{
+            width: 15%;background-color: white;margin-bottom: 25px;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);margin: 20px;float:left;padding: 10px;
+        }
+        #albumname{
+            text-align: center;padding: 10px 20px;
+        }
+        .grid{
+            background-color: #c1aea5;display:flex;flex-wrap: wrap;justify-content: center;
+        }
+    </style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="page.htm">Home</a></li>
+            <li><a href="https://open.spotifiy.com/">Songs</a></li>
+            <li><a href="https://www.abes.ac.in/">College</a></li>
+            <li><a href="exact.html">Misc</a></li>
+        </ul>
+    </nav>
+
+    <div id="info">
+        <br>
+          <img id="pfp" src="puneet.jpg">
+          <h1 id="name">Puneet</h1>&nbsp;&nbsp;<h1 id="name">Superstar</h1>
+          <p id="intro">24 March 1992</p>
+          <h3>Influencer</h3>
+          
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod labore dolore doloremque aliquid repellendus explicabo cum tenetur neque magni eaque nostrum fugit, itaque veritatis, beatae laudantium doloribus vel ducimus. Qui?Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos eveniet illo assumenda nihil accusantium dignissimos numquam magni delectus, excepturi asperiores dolorem odio ut unde porro, quia consequuntur fugiat hic doloremque. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni dolorem quos quidem molestiae, vitae modi autem amet expedita sunt officiis facilis accusantium laudantium repudiandae veniam excepturi, quis, commodi et! Sit!</p>
+    </div>
+    <hr width="80%" height="4px">
+    <h2 align="center"  style="margin-bottom: 5;">Timeline</h2>
+    <section class="time">
+      <ul>
+        <li>
+            <div class="date">School</div>
+            <div class="content">TMKC</div>
+        </li>
+        <li>
+            <div class="date">Tmkb</div>
+            <div class="content">Hatt bkc</div>
+        </li>
+        <li>
+            <div class="date">K</div>
+            <div class="content">Kl</div>
+        </li>
+    </ul>
+    <hr width="90%" height="10px">
+    
+    <div class="grid">
+    <div id="album">
+        <img src="spider.jpeg" width="100%">
+        <div id="albumname">
+            <p>kbhi</p>
+        </div>
+    </div>
+    <div id="album">
+        <img src="winter.jpeg" width="100%">
+        <div id="albumname">
+            <p>winter</p>
+        </div>
+    </div>
+    <div id="album">
+        <img src="kanye.jpeg" width="100%">
+        <div id="albumname">
+            <p>pun</p>
+        </div>
+    </div>
+    <div id="album">
+        <img src="graduation.jpeg" width="100%">
+        <div id="albumname">
+            <p>albu</p>
+        </div>
+    </div>
+    <div id="album">
+        <img src="mydark.jpeg" width="100%">
+        <div id="albumname">
+            <p>kbhi</p>
+        </div>
+    </div>
+    <div id="album">
+        <img src="puneet.jpg" width="100%">
+        <div id="albumname">
+            <p>kbhi</p>
+        </div>
+    </div>
+    <div id="album">
+        <img src="gradient.jpeg" width="100%">
+        <div id="albumname">
+            <p>kbhi</p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
