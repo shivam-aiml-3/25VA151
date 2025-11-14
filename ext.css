@@ -1,0 +1,40 @@
+
+body{
+    margin:0;
+}
+nav{
+    position: relative;width: 100%;background-color: #78D64B
+}
+nav ul{
+    list-style-type:none;margin: 0;padding: 0;overflow: hidden;
+}
+nav ul li{
+    float: left;
+}
+nav ul li a{
+    padding: 0 40px 0 40px;display: block;text-align: center;text-decoration: none;
+}
+nav ul li a:hover{
+    background-color: #4A7729;
+}
+.grid{
+      width:100%;height: 500px;background-color:#DBE442;
+      display: flex;
+      justify-content: space-between;
+      align-items:center;
+    }
+    .ele{
+    height:50%;width:20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .ele:nth-child(odd){
+        background-color:#8B84D7 ;
+    }
+    .ele:nth-child(even){
+        background-color: #DB3EB1;
+    }
+center h1{
+    margin:0;
+}
