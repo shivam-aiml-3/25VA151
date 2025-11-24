@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>try</title>
+    <style>
+        body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+    }
+
+    .header-logo-block, .header-title-block,.header-bar-block, .footer-bar, 
+    .left-blocks, .right-blocks, .center-area > div {
+        padding: 15px;
+        box-sizing: border-box;
+        background-color:chartreuse;
+        text-align: center;
+        min-height: 50px; 
+    }
+    .layout-header {
+        display: flex;align-items:center; 
+    }
+    .header-bar-block{
+        width:100%;
+    }
+    .header-logo-block {
+        background-color:aqua;width:20%;
+    }
+    
+    .header-bar-block {
+        background-color:blueviolet;width:60%;
+        min-height: 30px;
+    }
+    .main-content-wrapper {
+        display: flex;
+        align-items: stretch; 
+    }
+
+    .left-blocks, .right-blocks {
+        width: 20%; 
+        min-height: 400px;
+        background-color:cadetblue
+    }
+
+    </style>
+
+</head>
+<body>
+    <div class="page-container">
+        <header class="layout-header">
+            <div class="header-logo-block"><h2>Logo</h2></div>
+            <div class="header-title-block"><h2>Title</h2></div>
+            <div class="header-bar-block"><h2>Bar</h2></div>
+        </header>
+
+        <main class="main-content-wrapper">
+            <div class="left-blocks">Left Blocks</div>
+
+            <div class="center-area">
+                <div class="center-center-blocks">Center Blocks</div>
+                <div class="center-modules">
+                    <div class="center-left-blocks">Left Blocks</div>
+                    <div class="center-right-blocks">Right Blocks</div>
+                </div>
+                <div class="module-contents">Cont</div>
+            </div>
+
+            <div class="right-blocks">Right Blocks</div>
+        </main>
+
+        <footer class="footer-bar">
+            Footer Bar
+        </footer>
+    </div>
+</body>
+</html>
