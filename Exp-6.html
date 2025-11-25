@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Layout</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap');
+
+        body{
+            margin: 0px;background-color: blue;
+        }
+        h1{
+            font-family: Quicksand;
+            font-size: 1.9rem;margin: 0;
+        }
+        nav{
+            border-radius: 0 0 10px 10px;background: rgba(255, 255, 255, 0.x);backdrop-filter: blur(30px);
+        }
+        .product{
+            display: flex;flex-wrap:wrap;justify-content: center;background-color: #e9eee3;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card{
+            border-radius: 12px;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+    
+        }
+        .info{
+            text-align: center;
+            font-size: 1.5rem;font-family:sans-serif;
+        }
+        .image{
+             height: 180px; 
+            background-color: #f0f0f0;
+            overflow: hidden;
+            position: relative;
+        }
+        .image img{
+             width: 100%;
+            height: 100%;
+            object-fit: cover; 
+            object-position: top center;
+            transition: transform 0.5s ease;
+        }
+        .one,.two,.three,.four,.five{
+            margin:10px;padding: 15px;box-shadow:  0 4px 8px 0 rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+            border-radius: 10px; background-color: #BEC6C4;
+        }
+       
+    </style>
+</head>
+<body>
+    <nav>
+      <h1> Jackets</h1>
+    </nav>
+    <section class="product">
+        <DIV class="one">
+            <div class="card">
+                    <div class="image">
+                        <img src="Gemini_Generated_Image_jtyyxhjtyyxhjtyy.png">
+                    </div>
+            </div>
+            <div class="info">
+                <h5>Blue Jacket 2</h5>
+                <h6> $800.00</h6>
+             </div>
+        </DIV>
+       
+        <DIV class="two">
+            <div class="card">
+                    <div class="image">
+                        <img src="Gemini_Generated_Image_k4p8xak4p8xak4p8.png">
+                    </div>
+             </div>
+             <div class="info">
+                 <h5>Blue Jacket 3</h5>
+                 <h6> $800.00</h6>
+             </div>
+        </DIV>
+
+        <DIV class="three">
+            <div class="card">
+                    <div class="image">
+                        <img src="Gemini_Generated_Image_o56pj4o56pj4o56p.png">
+                    </div>
+             </div>
+             <div class="info">
+                 <h5>Blue Jacket 4</h5>
+                 <h6> $800.00</h6>
+             </div>
+        </DIV>
+
+        <DIV class="four">
+            <div class="card">
+                    <div class="image">
+                        <img src="Gemini_Generated_Image_swsd1oswsd1oswsd.png">
+                    </div>
+            </div>
+            <div class="info">
+                <h5>Blue Jacket 5</h5>
+                <h6> $800.00</h6>
+             </div>
+        </DIV>
+        
+        <DIV class="five">
+             <div class="card">
+                    <div class="image">
+                        <img src="Gemini_Generated_Image_y162hky162hky162.png">
+                    </div>
+             </div>
+             <div class="info">
+                 <h5>Blue Jacket 6</h5>
+                 <h6> $800.00</h6>
+             </div>
+        </DIV>
+    </section>
+</body>
+</html>
