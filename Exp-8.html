@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(113, 117, 218);
+            font-family: 'Roboto';
+        }
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 350px;
+            background-color: rgb(238, 237, 253);
+            padding: 3rem 0rem 0rem 0rem;
+            border-radius: 14px;
+            gap: 20px;
+            box-shadow: 0 3px 8px rgb(20, 16, 68);
+        }
+
+        .pic {
+            width: 160px;
+            border-radius: 90px;
+            border: 3px solid rgb(42, 38, 95);
+            filter: brightness(90%);
+        }
+
+        .pic:hover {
+            transform: translateY(-5px);
+            filter: brightness(110%);
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            border-radius: 0 0 14px 14px;
+            background-color: rgb(42, 38, 95);
+            padding: 3rem;
+        }
+
+        .name {
+            font-size: 1.8em;
+            font-weight: 400;
+            color: white;
+            margin-bottom: 20px;
+            margin-top: .2rem;
+        }
+
+        .loc {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .loc img {
+            height: 20px;
+            filter: invert();
+        }
+
+        .ig {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+
+        .ig img {
+            height: 18px;padding: 0 5px 0 0;
+        }
+        .ig a{
+            text-decoration: none;color: white;
+        }
+        .ig a:hover{
+            transform: translateY(-2px);
+            background-color: rgb(113,117,218);
+            border-radius: .4rem;
+        }
+        .skill {
+            padding: 1rem 0;
+            border-top: 2px solid rgb(20, 26, 68);
+        }
+
+        .skill h2 {
+            color: white;
+            font-weight: 700;
+            padding: 0rem 5.78rem;
+            margin-top: 10px;
+        }
+
+        .list {
+            list-style: none;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .list li {
+            display: inline-block;
+            cursor: pointer;
+            padding: 0.1rem 0.5rem;
+            margin: 2px 0;
+            border-radius: .4rem;
+            color: rgb(238, 237, 253)
+        }
+
+        .list li:hover {
+            transform: translateY(-5px);
+            color: rgb(20, 16, 38);
+            background-color: rgb(113, 117, 218);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <img class="pic" src="puneet.jpg">
+        <div class="details">
+            <h1 class="name">
+                Puneet Superstar
+            </h1>
+            <div class="loc">
+                <img src="location-dot-solid.svg">
+                <span>Delhi</span>
+            </div>
+            <div class="ig">
+                <a href="https://www.instagram.com/puneetsuperr_star/?hl=en">
+                    <img src="instagram-social-media-network-communication-interaction-connection-svgrepo-com.svg">
+                    <span>
+                        @puneetsuperr_star
+                    </span>
+                </a>
+            </div>
+            <div class="skill">
+                <h2>Skills</h2>
+                <ul class="list">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Java</li>
+                    <li>Pytorch</li>
+                    <li>Gaandmasti</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
